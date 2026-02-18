@@ -1,19 +1,107 @@
 # Numerical Analysis Calculator
 
-Success response
-```
-response = {
-    'status': 'success',
-    'message': f'The solution was found on x = {solution} with a value of f(x) = {function(solution)}',
-    # matrix with the values of the table in order: iteration, xi, f(xi), absolute error i
-    'table': [['0', 'x0', 'f(x0)', 'e0'], ['1', 'x1', 'f(x1)', 'e1']],
-}
+Calculadora web de **análisis numérico** que permite encontrar
+soluciones aproximadas a funciones matemáticas mediante diferentes
+métodos iterativos.
+
+Este proyecto fue desarrollado como una herramienta educativa para
+facilitar el aprendizaje y la aplicación de métodos numéricos.
+
+------------------------------------------------------------------------
+
+## Características
+
+-   Cálculo de raíces de funciones matemáticas
+-   Visualización de iteraciones en tablas
+-   Cálculo de error en cada iteración
+-   Interfaz web interactiva
+-   Backend desarrollado en Python con Django
+
+------------------------------------------------------------------------
+
+## Tecnologías utilizadas
+
+-   Python
+-   Django
+-   HTML
+-   CSS
+-   JavaScript
+
+------------------------------------------------------------------------
+
+## Estructura del proyecto
+
+    numerical-analysis-calculator/
+    │
+    ├── calculator/
+    ├── home/
+    ├── methods/
+    ├── manage.py
+    ├── requirements.txt
+    └── README.md
+
+------------------------------------------------------------------------
+
+## Instalación y ejecución
+
+### 1. Clonar el repositorio
+
+``` bash
+git clone https://github.com/jmmontoya5/numerical-analysis-calculator.git
 ```
 
-Error response
+### 2. Entrar al proyecto
+
+``` bash
+cd numerical-analysis-calculator
 ```
-response = {
-    'status': 'error',
-    'message': f'An error ocurred: {e}',
-}
+
+### 3. Crear entorno virtual
+
+``` bash
+python -m venv venv
 ```
+
+Activar entorno virtual:
+
+**Windows**
+
+``` bash
+venv\Scripts\activate
+```
+
+**Linux / Mac**
+
+``` bash
+source venv/bin/activate
+```
+
+### 4. Instalar dependencias
+
+``` bash
+pip install -r requirements.txt
+```
+
+### 5. Ejecutar el servidor
+
+``` bash
+python manage.py runserver
+```
+
+### 6. Abrir en el navegador
+
+http://127.0.0.1:8000
+
+------------------------------------------------------------------------
+
+##  Objetivo
+
+El objetivo de este proyecto es aplicar métodos numéricos utilizando
+Python y desarrollar una aplicación web funcional como herramienta de
+aprendizaje.
+
+
+
+
+
+Proyecto de uso educativo.
